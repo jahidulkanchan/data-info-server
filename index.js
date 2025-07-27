@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors(['datainfoo.netlify.app', 'http://localhost:5173']));
 app.use(express.json());
 
 // HTTP server তৈরি করো
