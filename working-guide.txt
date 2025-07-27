@@ -1,0 +1,13 @@
+my-server/
+│
+├── config/
+│   └── db.js              # MongoDB connection
+│
+├── user/
+│   ├── user.model.js      # Mongoose schema
+│   ├── user.controller.js # Request handlers
+│   └── user.routes.js     # Express routes
+│
+├── index.js               # Entry point
+├── .env                   # Environment variables
+└── package.json
