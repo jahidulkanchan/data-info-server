@@ -38,6 +38,9 @@ module.exports.io = io;
 // Routes
 const userRoutes = require('./user/user.routes');
 app.use('/api/users', userRoutes);
+// Notification Routes
+const notificationRoutes = require('./notification/notification.routes');
+app.use('/api/notifications', notificationRoutes);
 
 // Test route
 app.get('/', (req, res) => {
